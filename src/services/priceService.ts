@@ -27,7 +27,7 @@ interface HistoricalPrices {
   dex: PriceData[];
 }
 
-const API_BASE_URL = 'https://silky-annaliese-icecoldjay-3bd8ce07.koyeb.app/'; // http://residential-judie-icecoldjay-d28c46c7.koyeb.app/health
+const API_BASE_URL = 'http://localhost:3000/api'; // http://residential-judie-icecoldjay-d28c46c7.koyeb.app/health
 
 
 /**
@@ -35,7 +35,7 @@ const API_BASE_URL = 'https://silky-annaliese-icecoldjay-3bd8ce07.koyeb.app/'; /
  */
 export const getPrices = async (): Promise<PriceResponse> => {
   try {
-    const response = await fetch(`${API_BASE_URL}api/prices`);
+    const response = await fetch(`${API_BASE_URL}/prices`);
     if (!response.ok) {
       throw new Error('Failed to fetch prices');
     }
@@ -67,7 +67,7 @@ export const getPrices = async (): Promise<PriceResponse> => {
  */
 export const getHistoricalPrices = async (): Promise<HistoricalPrices> => {
   try {
-    const response = await fetch(`${API_BASE_URL}api/historical`);
+    const response = await fetch(`${API_BASE_URL}/historical`);
     if (!response.ok) {
       throw new Error('Failed to fetch historical prices');
     }
@@ -98,7 +98,7 @@ export const getHistoricalPrices = async (): Promise<HistoricalPrices> => {
  */
 export const getIndicators = async (): Promise<Indicators> => {
   try {
-    const response = await fetch(`${API_BASE_URL}api/indicators`);
+    const response = await fetch(`${API_BASE_URL}/indicators`);
     if (!response.ok) {
       throw new Error('Failed to fetch indicators');
     }
@@ -122,7 +122,7 @@ export const getIndicators = async (): Promise<Indicators> => {
  */
 export const getOpportunityStatus = async (): Promise<OpportunityStatus> => {
   try {
-    const response = await fetch(`${API_BASE_URL}api/opportunity`);
+    const response = await fetch(`${API_BASE_URL}/opportunity`);
     if (!response.ok) {
       throw new Error('Failed to fetch opportunity status');
     }

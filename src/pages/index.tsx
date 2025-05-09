@@ -62,7 +62,7 @@ const Dashboard = () => {
     
     const interval = setInterval(() => {
       fetchData();
-    }, 2000);
+    }, 30000);
     
     return () => clearInterval(interval);
   }, []);
