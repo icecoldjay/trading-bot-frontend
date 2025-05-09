@@ -27,7 +27,7 @@ interface HistoricalPrices {
   dex: PriceData[];
 }
 
-const API_BASE_URL = 'http://localhost:3000/api'; // http://residential-judie-icecoldjay-d28c46c7.koyeb.app/health
+const API_BASE_URL = 'https://final-fern-icecoldjay-181db0bb.koyeb.app/api'; // http://residential-judie-icecoldjay-d28c46c7.koyeb.app/health
 
 
 /**
